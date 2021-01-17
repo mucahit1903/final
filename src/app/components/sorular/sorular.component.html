@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 style= "text-align: center;" class="mt-5 mb-5">Sık Sorulan Sorular</h1>
+    </div>
+  </div>
+</div>
+<div class="container">
+
+<div class="row">
+
+  <div class="col-md-12 mt-5 mb-5 bg bg-light"  *ngFor="let kayit of kayitlar">
+<div class="urun" style="width: 100%; height: auto;">
+  <div class="row">
+
+    <div class="col-md-12">
+      <div class="baslik">
+        <h3><b>Soru: {{kayit.soru}}</b></h3>
+        <p><b>Cevap:</b> {{kayit.cevap}}</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  </div>
+</div>
+
+
+
+
+<app-footer></app-footer>
